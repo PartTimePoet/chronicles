@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Aoboshi One', serif;
+}
+
+
+body {
+  background: #f4e7c8;
+  min-height: 100vh;
+}
+
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+
+.logo {
+  text-align: center;
+}
+
+
+.logo img {
+  width: 110px;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+
+.logo h1 {
+  color: #0b4f4a;
+  font-size: 46px;
+}
+
+
+.back-btn {
+  background: #5a2e1b;
+  color: #f4e7c8;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+
+/* Main */
+.reset-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+
+.reset-card {
+  width: 520px;
+  border: 1.5px solid #333;
+  border-radius: 25px;
+  padding: 40px;
+}
+
+
+.reset-card label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+.reset-card input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #333;
+  background: transparent;
+  margin-bottom: 25px;
+}
+
+
+.reset-btn {
+  width: 100%;
+  padding: 16px;
+  background: #1f1f1f;
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* Links */
+.links {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #0b4f4a;
+}
+
+
+.links a {
+  color: #0b4f4a;
+  text-decoration: none;
+  font-weight: bold;
+}
