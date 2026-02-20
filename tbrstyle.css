@@ -7,7 +7,7 @@
 
 
 body {
-  background: url("assets/DashboardBG.png") no-repeat center center fixed;
+  background: url("DashboardBG.png") no-repeat center center fixed;
   background-size: cover;
   color: #52443f;
 }
@@ -425,7 +425,7 @@ select {
 /* FOOTER */
 .footer {
   height: 160px;
-  background: url("assets/footer.png") repeat-x bottom;
+  background: url("footer.png") repeat-x bottom;
 }
 
 
@@ -456,7 +456,7 @@ select {
 .footer-bg {
   width: 100%;
   height: 160px; /* or whatever height your image needs */
-  background-image: url("assets/footer.png");
+  background-image: url("footer.png");
   background-repeat: repeat-x;
   background-position: bottom center;
   background-size: auto 100%;
