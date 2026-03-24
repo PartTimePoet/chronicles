@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chronicles Dashboard</title>
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="dashboardstyle.css" />
+</head>
+<body>
+
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Chronicles logo">
+    </div>
+
+
+    <nav class="nav-links">
+      <a href="explore.html">Explore</a>
+      <a href="stats.html">Stats</a>
+      <a href="community.html">Community</a>
+      <a href="challenges.html">Challenges</a>
+    </nav>
+
+
+    <!-- SEARCH -->
+    <div class="search-box">
+      <img src="assets/search.png" class="search-icon">
+
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search books..."
+        oninput="searchBooks()"
+>
+    </div>
+
+
+    <!-- PROFILE DROPDOWN -->
+    <div class="profile-wrapper">
+      <div class="profile-icon" id="profileIcon">👤</div>
+
+
+      <div class="profile-dropdown" id="profileDropdown">
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <!-- SEARCH RESULTS -->
+  <section class="search-results">
+    <div class="books-row" id="searchResults"></div>
+  </section>
+
+
+
+
+  <!-- GREETING -->
+  <section class="greeting">
+    <div class="streak">
+      <img src="assets/flame.png" alt="streak icon" class="streak-icon">
+      <span class="streak-placeholder">-- day streak</span>
+    </div>
+
+
+    <h1>
+      Hi again, <span class="username" id="username">User</span>!
+    </h1>
+
+
+    <!-- SHELF DROPDOWN -->
+    <div class="shelf-dropdown">
+      <button id="dropdownToggle">
+        your shelves
+        <span class="arrow">▾</span>
+      </button>
+
+
+      <div id="dropdownMenu" class="dropdown-menu">
+        <a href="to-read.html">To Be Read</a>
+        <a href="currently-reading.html">Currently Reading</a>
+        <a href="read.html">Read</a>
+        <a href="owned.html">Owned</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- DASHBOARD -->
+  <main class="dashboard">
+
+
+    <!-- LEFT SECTION -->
+    <section class="left">
+      <h2>To-Read Pile</h2>
+      <div class="books-row" id="toReadContainer"></div>
+      <a href="to-read.html" class="link">go to shelf</a>
+
+
+      <h2>Recommendations</h2>
+      <div class="books-row" id="recommendationContainer"></div>
+      <a href="explore.html" class="link">explore</a>
+    </section>
+
+
+
+
+    <!-- RIGHT SECTION -->
+    <aside class="right">
+      <h2>Currently Reading</h2>
+      <div id="currentlyReadingContainer"></div>
+      <a href="currently-reading.html" class="link">go to shelf</a>
+    </aside>
+
+
+  </main>
+
+
+
+
+  <div class="footer-bg"></div>
+
+
+  <!-- LOAD JS AFTER PAGE -->
+  <script src="dashboardscript.js" defer></script>
+
+
+</body>
+</html>

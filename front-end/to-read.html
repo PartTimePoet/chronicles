@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>to-read – Chronicles</title>
+
+
+  <!-- Aoboshi One -->
+  <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="tbrstyle.css" />
+</head>
+
+
+<body>
+
+
+<!-- HEADER / NAVBAR -->
+<header class="navbar">
+
+
+  <div class="logo">
+    <img src="assets/logo.png" alt="Chronicles logo">
+  </div>
+
+
+  <nav class="nav-links">
+    <a href="explore.html">Explore</a>
+    <a href="stats.html">Stats</a>
+    <a href="community.html">Community</a>
+    <a href="challenges.html">Challenges</a>
+  </nav>
+
+
+  <div class="search-box">
+    <img src="assets/search.png" class="search-icon">
+    <input type="text" placeholder="Search books you've read...">
+  </div>
+
+
+  <div class="profile-section">
+
+
+  <div class="profile-icon">👤</div>
+
+
+  <div class="profile-menu" id="profileMenu">
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+</div>
+
+
+</header>
+
+
+
+
+<!-- PAGE -->
+<main class="page">
+
+
+<h1 class="page-title">To-Read Pile</h1>
+
+
+
+
+<!-- SEARCH -->
+<div class="search-read-books">
+  <div class="search-box">
+    <img src="assets/search.png" class="search-icon">
+    <input type="text" placeholder="Search to-read pile...">
+  </div>
+</div>
+
+
+
+
+<!-- SORT DROPDOWN -->
+<div class="shelf-dropdown2">
+
+
+<button id="dropdownToggle2">
+  sort by
+  <span class="arrow2">▾</span>
+</button>
+
+
+<div id="dropdownMenu2" class="dropdown-menu2">
+  <button>date added</button>
+  <button>author name (A-Z)</button>
+  <button>author name (Z-A)</button>
+  <button>title (A-Z)</button>
+  <button>title (Z-A)</button>
+</div>
+
+
+</div>
+
+
+
+
+<!-- SHELVES DROPDOWN -->
+<div class="shelf-dropdown">
+
+
+<button id="dropdownToggle">
+  your shelves
+  <span class="arrow">▾</span>
+</button>
+
+
+<div id="dropdownMenu" class="dropdown-menu">
+  <a href="to-read.html">To Be Read</a>
+  <a href="currently-reading.html">Currently Reading</a>
+  <a href="read.html">Read</a>
+  <a href="owned.html">Owned</a>
+  <a href="dashboard.html">Go to Home</a>
+</div>
+
+
+</div>
+
+
+
+
+<!-- BOOK LIST -->
+<section class="book-list" id="toReadBooksContainer">
+
+
+<!-- Books from MongoDB will load here automatically -->
+
+
+</section>
+
+
+</main>
+
+
+
+
+<script src="tbrscript.js"></script>
+
+
+<div class="footer-bg"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <title>Chronicles – Login</title>
+  <link rel="stylesheet" href="loginstyle.css" />
+</head>
+<body>
+  <script>
+  const token = localStorage.getItem("token");
+  if (token) {
+    window.location.href = "dashboard.html";
+  }
+</script>
+
+
+  <div class="login-container">
+
+
+    <button type="button" class="back-btn"
+        onclick="window.location.href='index.html'">
+      Go Back
+    </button>
+
+
+    <div class="logo-section">
+      <img src="assets/logo.png" alt="Books Icon" class="logo-icon" />
+      <h1 class="logo-text">chronicles</h1>
+    </div>
+
+
+    <form class="login-form" id="loginForm">
+
+
+      <label>Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+
+      <label>Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required />
+
+
+      <button type="submit" class="login-btn">Sign In</button>
+
+
+    </form>
+
+
+    <div class="links">
+      <a href="pwdreset.html">Forget your password?</a>
+      <a href="signup.html">Don’t have an account?</a>
+    </div>
+
+
+  </div>
+
+
+  <script src="loginscript.js"></script>
+</body>
+</html>

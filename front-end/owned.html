@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>owned – Chronicles</title>
+
+
+
+
+  <!-- Aoboshi One -->
+  <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
+
+
+
+
+  <link rel="stylesheet" href="owned.css" />
+</head>
+<body>
+
+
+
+
+<!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Chronicles logo">
+    </div>
+
+
+    <nav class="nav-links">
+      <a href="explore.html">Explore</a>
+      <a href="stats.html">Stats</a>
+      <a href="community.html">Community</a>
+      <a href="challenges.html">Challenges</a>
+    </nav>
+
+
+    <div class="search-box">
+      <img src="assets/search.png" class="search-icon">
+      <input type="text" placeholder="Search books. you own..">
+    </div>
+
+
+    <div class="profile-section">
+
+
+  <div class="profile-icon">👤</div>
+
+
+  <div class="profile-menu" id="profileMenu">
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+</div>
+  </header>
+
+
+<!-- PAGE -->
+<main class="page">
+  <h1 class="page-title">Owned Books</h1>
+
+
+    <div class = "search-read-books">
+    <div class="search-box">
+      <img src="assets/search.png" class="search-icon">
+      <input type="text" placeholder="Search books you own...">
+    </div>
+  </section>
+
+
+
+
+ 
+    <!-- DROPDOWN -->
+   <div class="shelf-dropdown">
+     <button id="dropdownToggle">
+       your shelves
+      <span class="arrow">▾</span>
+     </button>
+
+
+   <div id="dropdownMenu" class="dropdown-menu">
+     <a href="to-read.html">To Be Read</a>
+     <a href="currently-reading.html">Currently Reading</a>
+     <a href="read.html">Read</a>
+     <a href="owned.html">Owned</a>
+     <a href="dashboard.html">Go to Home</a>
+   </div>
+
+
+   <div id="dropdownMenu">
+     <button>to be read</button>
+     <button>currently reading</button>
+     <button>read</button>
+     <button>owned</button>
+     <button>did not finish</button>
+   </div>
+   </div>
+  </section>
+
+
+
+
+<!-- BOOK LIST -->
+<section class="book-list">
+
+
+
+
+<!-- BOOK CARD -->
+<article class="book-card">
+    <div class="cover">Book<br>Cover</div>
+
+
+
+
+    <div class="info">
+    <p class="series">Book series name #book number</p>
+    <h2>Book Name</h2>
+    <p class="author">Author Name</p>
+    <p class="placeholder">pages • binding • first pub year • edition • no. of editions</p>
+
+
+
+
+    <div class="tags">
+        <button>n/f</button>
+        <button>genre</button>
+        <button>genre</button>
+        <button>mood</button>
+        <button>mood</button>
+        <button>pace</button>
+    </div>
+    </div>
+
+
+
+
+    <div class="actions">
+    <button class="review">⭐ Add review</button>
+
+
+
+
+    <div class="date">Started mon DD, YYYY ✎</div>
+    <div class="date">Finished mon DD, YYYY ✎</div>
+
+
+
+
+    <select>
+    <div class="shelves">
+        <option>read</option>
+        <option>to read</option>
+        <option>currently reading</option>
+        <option>did not finish</option>
+    </select>
+
+
+
+
+   <button class="mark-owned-btn" data-book-id="BOOK_ID">
+  mark as owned ✓
+</button>
+    <button class="outline">owned / not owned</button>
+    </div>
+</article>
+
+
+
+
+<!-- DUPLICATE BOOK CARD AS NEEDED -->
+<article class="book-card">
+    <div class="cover">Book<br>Cover</div>
+
+
+
+
+    <div class="info">
+    <p class="series">Book series name #book number</p>
+    <h2>Book Name</h2>
+    <p class="author">Author Name</p>
+    <p class="placeholder">pages • binding • first pub year • edition • no. of editions</p>
+
+
+
+
+    <div class="tags">
+        <button>n/f</button>
+        <button>genre</button>
+        <button>genre</button>
+        <button>mood</button>
+        <button>mood</button>
+        <button>pace</button>
+    </div>
+    </div>
+
+
+
+
+    <div class="actions">
+    <button class="review">⭐ Add review</button>
+
+
+
+
+    <div class="date">Started mon DD, YYYY ✎</div>
+    <div class="date">Finished mon DD, YYYY ✎</div>
+
+
+
+
+    <select>
+    <div class="shelves">
+        <option>read</option>
+        <option>to read</option>
+        <option>currently reading</option>
+        <option>did not finish</option>
+    </select>
+
+
+
+
+    <button class="owned">mark as owned ✓</button>
+    <span class="outline">owned / not owned</span>
+    </div>
+</article>
+
+
+
+
+</section>
+</main>
+
+
+<script src="owned.js"></script>
+  <div class="footer-bg"></div>
+</body>
+</body>
+</html>

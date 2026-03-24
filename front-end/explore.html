@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Explore – Chronicles</title>
+
+
+<!-- Aoboshi One -->
+<link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="explorestyle.css" />
+</head>
+
+
+<body>
+
+
+<!-- HEADER / NAVBAR -->
+<header class="navbar">
+
+
+<div class="logo">
+<img src="assets/logo.png" alt="Chronicles logo">
+</div>
+
+
+<nav class="nav-links">
+<a href="explore.html">Explore</a>
+<a href="stats.html">Stats</a>
+<a href="community.html">Community</a>
+<a href="challenges.html">Challenges</a>
+</nav>
+
+
+<div class="search-box">
+<img src="assets/search.png" class="search-icon">
+<input id="searchInput" type="text" placeholder="Search books...">
+</div>
+
+
+<div class="profile-section">
+
+
+  <div class="profile-icon">👤</div>
+
+
+  <div class="profile-menu" id="profileMenu">
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+</div>
+
+
+</header>
+
+
+
+
+<!-- PAGE -->
+<main class="page">
+
+
+<h1 class="page-title">Explore</h1>
+
+
+
+
+<!-- SORT DROPDOWN -->
+<div class="shelf-dropdown2">
+
+
+<button id="dropdownToggle2">
+sort by
+<span class="arrow2">▾</span>
+</button>
+
+
+<div id="dropdownMenu2" class="dropdown-menu2">
+<button data-sort="date">Date Added</button>
+<button data-sort="authorAZ">Author Name (A-Z)</button>
+<button data-sort="authorZA">Author Name (Z-A)</button>
+<button data-sort="titleAZ">Title (A-Z)</button>
+<button data-sort="titleZA">Title (Z-A)</button>
+</div>
+
+
+</div>
+
+
+
+
+<!-- BOOK LIST -->
+<section class="book-list" id="exploreBooksContainer">
+
+
+<!-- Books from API will load here -->
+
+
+</section>
+
+
+</main>
+
+
+
+
+<script src="explorescript.js"></script>
+
+
+<div class="footer-bg"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Aoboshi One", serif;
+}
+
+
+body {
+  background: url("assets/DashboardBG.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #52443f;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 18px 40px;
+  gap: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.logo img {
+  width: 65px;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #52443F;
+  font-weight: 300;
+}
+
+.search-box {
+  margin-left: auto;
+  position: relative;
+}
+
+.search-box input {
+  width: 360px;
+  background: #E4CE99;        /* search bar fill */
+  border: 1.5px solid #52443F; /* border color */
+  color: #52443F;              /* text color */
+  font-family: 'Aoboshi One', serif;
+  padding: 10px 40px;
+  border-radius: 25px;
+  outline: none;
+}
+
+.search-box input::placeholder {
+  color: #52443F;
+  opacity: 0.8;
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px; /* adjust icon size if needed */
+}
+
+.profile-icon {
+  margin-left: 20px;
+}
+
+/* PAGE */
+.page {
+  padding: 40px 80px;
+}
+
+
+.page-title {
+  position: absolute;
+  color: #5f2b35;
+  font-weight: 380; /* optional to match your style */
+  left: 30px;
+}
+
+.search-read-books {
+  position: relative;
+  margin-top: 5%;
+  margin-left: -3.5%;
+}
+
+/* Your Shelves DROPDOWN */
+.dropdown-menu {
+  display: none;
+  width: 180px;
+  border: 2px solid #F3E5C4;
+  border-radius: 10px;
+  overflow: hidden; /* removes gaps */
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  font-family: 'Aoboshi One', serif;
+  color: #F3E5C4;
+  background: transparent;
+  text-align: center;
+}
+
+.dropdown-menu a:hover {
+  opacity: 0.5;
+}
+
+.dropdown-menu a.active {
+  background: #9F4B5B;
+  color: #F3E5C4;
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* DROPDOWN CONTAINER */
+.shelf-dropdown {
+  position: absolute;
+  left: 50%;
+  transform: translateX(550px); /* move right */
+  bottom: 86%;
+}
+
+/* DROPDOWN BUTTON */
+#dropdownToggle {
+  width: 180px;
+  padding: 10px 14px;
+  background: transparent;
+  border: 2px solid #5F2B35;
+  border-radius: 10px;
+  font-family: 'Aoboshi One', serif;
+  color: #5F2B35;
+  cursor: pointer;
+  top: -200px;
+}
+
+/* ARROW */
+.arrow {
+  font-size: 22px;         
+  margin-left: 8px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  color: #5F2B35;
+}
+
+/* rotate arrow when open */
+.arrow.rotate {
+  transform: rotate(180deg);
+}
+
+/* DROPDOWN MENU */
+#dropdownMenu {
+  display: none;
+  position: absolute;
+  top: 100%;      
+  left: 0;                 
+  width: 100%;
+  border: 2px solid #F3E5C4;
+  border-radius: 10px;
+  border-color: #F3E5C4;
+  overflow: hidden;
+  background: #5F2B35;
+}
+
+/* DROPDOWN OPTIONS */
+#dropdownMenu button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  font-family: 'Aoboshi One', serif;
+  color: #F3E5C4;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* hover effect */
+#dropdownMenu button:hover {
+  background: rgba(159, 75, 91, 0.5);
+}
+
+/* selected option */
+#dropdownMenu button.active {
+  background: #9F4B5B;
+  color: #F3E5C4;
+}
+
+/* Sort By DROPDOWN */
+.dropdown-menu2 {
+  max-height: 180px;
+  display: none;
+  width: 150px;
+  border: 2px solid #F3E5C4;
+  border-radius: 20px;
+  overflow: hidden; /* removes gaps */
+  margin-left: -25%;
+}
+
+.dropdown-menu2 a {
+  max-height: 180px;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  font-family: 'Aoboshi One', serif;
+  color: #5F2B35;
+  background: transparent;
+  text-align: center;
+}
+
+.dropdown-menu2 a:hover {
+  opacity: 0.5;
+}
+
+.dropdown-menu2 a.active {
+  background: #9F4B5B;
+  color: #F3E5C4;
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+
+}
+
+/* DROPDOWN CONTAINER */
+.shelf-dropdown2 {
+  position: absolute;
+  left: -30%;
+  transform: translateX(550px); /* move right */
+  top: 20%;
+}
+
+/* DROPDOWN BUTTON */
+#dropdownToggle2 {
+  width: 180px;
+  padding: 5px 14px;
+  background: #5F2B35;
+  border: 2px solid #5F2B35;
+  border-radius: 20px;
+  font-family: 'Aoboshi One', serif;
+  color: #F3E5C4;
+  cursor: pointer;
+  margin-left: -62%;
+  margin-top: -90px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ARROW */
+.arrow2 {
+  font-size: 22px;         
+  margin-left: 8px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  color: #F3E5C4;
+}
+
+/* rotate arrow when open */
+.arrow2.rotate {
+  transform: rotate(180deg);
+}
+
+/* DROPDOWN MENU */
+#dropdownMenu2 {
+  display: none;
+  position: absolute;
+  margin-top: 0px;      
+  left: -65px;                
+  width: 100%;
+  border: 2px solid #5F2B35;
+  border-radius: 20px;
+  border-color: #5F2B35;
+  overflow: hidden;
+  background: #F3E5C4;
+}
+
+/* DROPDOWN OPTIONS */
+#dropdownMenu2 button {
+  max-height: 100px;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  font-family: 'Aoboshi One', serif;
+  color: #5F2B35;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* hover effect */
+#dropdownMenu2 button:hover {
+  background: rgba(159, 75, 91, 0.5);
+}
+
+/* selected option */
+#dropdownMenu2 button.active {
+  background: #9F4B5B;
+  color: #F3E5C4;
+}
+
+/* BOOK LIST */
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: -30px;
+}
+
+
+.book-card {
+  display: grid;
+  grid-template-columns: 180px 1fr 260px;
+  gap: 30px;
+  margin-top: 6.5%;
+}
+
+
+.cover {
+  background: #d29a8c;
+  border-radius: 18px;
+  height: 260px;
+  display: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.series {
+  font-size: 14px;
+}
+
+
+h2 {
+  font-size: 32px;
+}
+
+
+.author {
+  font-size: 18px;
+}
+
+
+.meta {
+  font-size: 14px;
+  margin: 6px 0 14px;
+}
+
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.tags button {
+  border: 1px solid #8a5a52;
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+  color: #8a5a52;
+  background: transparent;
+}
+
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shelves {
+  padding: 6px;
+  border-radius: 6px;
+  color: #5F2B35;
+  background: transparent;
+}
+
+.review {
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+
+.date {
+  font-size: 13px;
+}
+
+
+select {
+  padding: 6px;
+  border-radius: 6px;
+}
+
+
+.owned {
+  background: #cde3c4;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+
+.outline {
+  background: transparent;
+  border: 1px solid #8a5a52;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+
+/* FOOTER */
+.footer {
+  height: 160px;
+  background: url("footer.png") repeat-x bottom;
+}
+
+
+.cover {
+  background: #d29a8c;
+  border-radius: 18px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  /* NEW */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+
+/* HOVER EFFECT */
+.cover:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+
+/* FOOTER */
+.footer-bg {
+  width: 100%;
+  height: 160px; /* or whatever height your image needs */
+  background-image: url("footer.png");
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: auto 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-bg {
+  margin-top: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}

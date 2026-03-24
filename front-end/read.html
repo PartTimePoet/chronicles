@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<meta charset="UTF-8" />
+<title>read – Chronicles</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="readstyle.css" />
+
+
+</head>
+<body>
+
+
+<!-- HEADER -->
+<header class="navbar">
+
+
+<div class="logo">
+<img src="assets/logo.png" alt="Chronicles logo">
+</div>
+
+
+<nav class="nav-links">
+<a href="explore.html">Explore</a>
+<a href="stats.html">Stats</a>
+<a href="community.html">Community</a>
+<a href="challenges.html">Challenges</a>
+</nav>
+
+
+<div class="search-box">
+<img src="assets/search.png" class="search-icon">
+<input type="text" placeholder="Search books you've read...">
+</div>
+
+
+ <div class="profile-section">
+
+
+  <div class="profile-icon">👤</div>
+
+
+  <div class="profile-menu" id="profileMenu">
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+</div>
+</header>
+
+
+
+
+<!-- PAGE -->
+<main class="page">
+
+
+<h1 class="page-title">Read Pile</h1>
+
+
+
+
+<!-- SEARCH -->
+<div class="search-read-books">
+
+
+<div class="search-box">
+<img src="assets/search.png" class="search-icon">
+<input id="searchInput" type="text" placeholder="Search read books...">
+</div>
+
+
+</div>
+
+
+
+
+<!-- FILTER ROW -->
+<div class="filter-row">
+
+
+<!-- SHELVES DROPDOWN -->
+<div class="shelf-dropdown move-down">
+
+
+<button id="dropdownToggle">
+your shelves
+<span class="arrow">▾</span>
+</button>
+
+
+<div id="dropdownMenu" class="dropdown-menu">
+<a href="to-read.html">To Be Read</a>
+<a href="currently-reading.html">Currently Reading</a>
+<a href="read.html">Read</a>
+<a href="owned.html">Owned</a>
+<a href="dashboard.html">Go to Home</a>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<!-- BOOK LIST -->
+<section class="book-list">
+
+
+<!-- BOOKS WILL LOAD HERE -->
+<div id="readBooksContainer"></div>
+
+
+
+
+<!-- EMPTY MESSAGE -->
+<p id="emptyMessage" style="display:none; text-align:center; margin-top:40px;">
+No books in your read pile yet 📚
+</p>
+
+
+</section>
+
+
+</main>
+
+
+
+
+<script src="readscript.js"></script>
+<script src="navbar.js"></script>
+
+
+<div class="footer-bg"></div>
+
+
+</body>
+</html>

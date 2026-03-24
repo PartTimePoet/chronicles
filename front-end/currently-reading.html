@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>currently-reading – Chronicles</title>
+
+
+  <!-- Aoboshi One -->
+  <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="crstyle.css" />
+</head>
+
+
+<body>
+
+
+<!-- HEADER / NAVBAR -->
+<header class="navbar">
+
+
+  <div class="logo">
+    <img src="assets/logo.png" alt="Chronicles logo">
+  </div>
+
+
+  <nav class="nav-links">
+    <a href="explore.html">Explore</a>
+    <a href="stats.html">Stats</a>
+    <a href="community.html">Community</a>
+    <a href="challenges.html">Challenges</a>
+  </nav>
+
+
+  <div class="search-box">
+    <img src="assets/search.png" class="search-icon">
+    <input type="text" placeholder="Search books...">
+  </div>
+
+
+ <div class="profile-section">
+
+
+  <div class="profile-icon">👤</div>
+
+
+  <div class="profile-menu" id="profileMenu">
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+</div>
+</header>
+
+
+
+
+<!-- PAGE -->
+<main class="page">
+
+
+<h1 class="page-title">Current Reads</h1>
+
+
+<!-- SEARCH + SHELVES -->
+<div class="search-read-books">
+
+
+  <div class="search-box">
+    <img src="assets/search.png" class="search-icon">
+    <input id="searchInput" type="text" placeholder="Search books you're currently reading...">
+  </div>
+
+
+  <div class="shelf-dropdown">
+    <button id="dropdownToggle">
+      your shelves
+      <span class="arrow">▾</span>
+    </button>
+
+
+    <div id="dropdownMenu" class="dropdown-menu">
+      <a href="to-read.html">To Be Read</a>
+      <a href="currently-reading.html">Currently Reading</a>
+      <a href="read.html">Read</a>
+      <a href="owned.html">Owned</a>
+      <a href="dashboard.html">Go to Home</a>
+    </div>
+  </div>
+
+
+</div>
+
+
+<!-- SORT DROPDOWN -->
+<div class="shelf-dropdown2">
+
+
+<button id="dropdownToggle2">
+  sort by
+  <span class="arrow2">▾</span>
+</button>
+
+
+<div id="dropdownMenu2" class="dropdown-menu2">
+  <button data-sort="date">Date Added</button>
+  <button data-sort="authorAZ">Author Name (A-Z)</button>
+  <button data-sort="authorZA">Author Name (Z-A)</button>
+  <button data-sort="titleAZ">Title (A-Z)</button>
+  <button data-sort="titleZA">Title (Z-A)</button>
+</div>
+
+
+</div>
+
+
+
+
+<!-- BOOK LIST -->
+<section id="bookList" class="book-list">
+<!-- Books will load here from backend -->
+</section>
+
+
+</main>
+
+
+
+
+<script src="crscript.js"></script>
+
+
+<div class="footer-bg"></div>
+
+
+</body>
+</html>

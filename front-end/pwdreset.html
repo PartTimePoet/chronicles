@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+
+<meta charset="UTF-8">
+<title>Chronicles – Password Reset</title>
+
+
+<link rel="stylesheet" href="pwdreset.css">
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<div class="logo">
+<img src="assets/logo.png" alt="Chronicles Logo">
+</div>
+
+
+<button class="back-btn" onclick="window.location.href='index.html'">
+Back to Homepage!
+</button>
+
+
+</header>
+
+
+
+
+<main class="reset-wrapper">
+
+
+<div class="reset-card">
+
+
+<label>Email Address</label>
+
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required
+>
+
+
+<button class="reset-btn" onclick="sendResetEmail()">
+Send me reset password instructions
+</button>
+
+
+</div>
+
+
+
+
+<div class="links">
+<p>Don’t have an account? <a href="signup.html">Sign up here!</a></p>
+<p>Know your password? <a href="login.html">Sign in here!</a></p>
+</div>
+
+
+</main>
+
+
+<script src="pwdreset.js"></script>
+
+
+</body>
+</html>
